@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\mindi\Desktop\Capstone Project\Website\CSS\style1.css">
+<link rel="stylesheet" href="C:\Users\mindi\Desktop\Capstone Project\Website\CSS\style2.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Capstone Project</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What is UWB Technology</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hardware Used</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- What is UWB Technology -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>UWB Child Tracker</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>What is UWB Technology</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The UWB Child Tracker is an innovative handheld device designed for accurate tracking of a child within a range of up to 200 meters. Utilizing Ultra-Wide Band (UWB) technology, this project aims to provide parents and guardians with a reliable tool to ensure the safety and security of their children.
+      The device combines cutting-edge UWB technology with advanced tracking algorithms to deliver pinpoint accuracy in real-time. It offers a compact and portable solution that can easily be carried by parents or attached to the child's belongings. The UWB Child Tracker is equipped with a user-friendly interface (the screen), enabling effortless operation and monitoring.
+      Through the device's tracking capabilities, parents can keep a close eye on their child's movements, both indoors and outdoors. The UWB technology allows for precise localization, overcoming the limitations of traditional tracking methods, specifically GPS.
+    </p>
+    <p>In recent years, Ultra-Wide Band (UWB) technology has emerged as a game-changer in the field of wireless communication and tracking systems. With its unique properties and capabilities, UWB has opened up new avenues for highly accurate and reliable positioning applications. One such application is the UWB Child Tracker, a handheld device that achieves child tracking with considerable precision and range.
+      The origins of UWB technology can be traced back to the early 20th century, when it was initially used for military purposes. However, it wasn't until the late 1990s that UWB gained attention for its potential in commercial and consumer applications. UWB operates by transmitting signals over a wide range of frequencies, encompassing a vast bandwidth. Unlike traditional narrowband systems, UWB utilizes short-duration pulses that spread across this broad frequency spectrum, enabling high-resolution positioning and precise distance measurements.
+      The fundamental principle behind UWB's accuracy lies in its ability to exploit the properties of signal propagation. When a UWB signal is transmitted, it interacts with the environment, including objects, walls, and obstacles. This interaction results in reflections, diffractions, and scattering of the signal. By analyzing the time-of-flight and characteristics of these signal interactions, UWB devices can precisely determine the location of an object or person.
+      UWB technology offers several advantages over other positioning technologies. Its wide bandwidth allows for high-resolution ranging, making it capable of distinguishing objects with very close proximity. Additionally, UWB signals are less susceptible to interference from other wireless devices, ensuring reliable and robust operation even in crowded environments. Furthermore, UWB's ability to penetrate walls and obstacles enhances its applicability in indoor tracking scenarios.
+      Building upon these advancements, the UWB Child Tracker project aims to leverage the power of UWB technology to provide parents and guardians with an innovative solution for keeping an eye on their children. By incorporating UWB-based tracking algorithms and a portable handheld device, the UWB Child Tracker offers a comprehensive and reliable system that ensures the safety and security of children.</p>
+  </div>
+
+  <!-- Hardware Used -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Hardware Used</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Here is the hardware that we used:</p>
+  </div>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\UWB.jpg" style="width:100%" onclick="onClick(this)" alt="UWB Chip with ESP32 Arduino Board">
+      <p>The UWB with Display module from Makerfabs is a compact and versatile device that combines Ultra-Wide Band (UWB) technology with a built-in display. This module utilizes UWB for precise positioning and distance measurements, allowing users to track objects or people with high accuracy. The integrated display provides real-time feedback and visual information. It offers a convenient solution for applications such as asset tracking, indoor navigation, and object localization, where accurate positioning and visual feedback are essential.</p>
+      <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\Battery.jpg" style="width:100%" onclick="onClick(this)" alt="Lithium Rechargable Battery">
+      <p>The lithium battery is a rechargeable power source with a voltage rating of 3.7 volts and a capacity of 1350 milliampere-hours (mAh). This type of battery is commonly used in portable electronic devices due to its high energy density and long-lasting performance. With its rechargeable nature, it can be easily replenished using a compatible charging device, making it a cost-effective and environmentally friendly choice. The 3.7V 1350mAh lithium battery offers a reliable power supply, allowing devices to operate efficiently for extended periods before requiring recharging. Its compact size and lightweight design make it suitable for various applications, including smartphones, tablets, digital cameras, and portable audio players</p>
+      <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\Piezo Buzzer.jpg" style="width:70%" onclick="onClick(this)" alt="Piezo Buzzer">
+      <p>The piezo buzzer is a small but powerful audio signaling device that utilizes the piezoelectric effect to produce sound. With a rich history dating back to the mid-20th century, piezo buzzers have become a popular choice in various industries and applications. They find wide use in alarm systems, timers, notification devices, and electronic musical instruments. What sets piezo buzzers apart from other similar products is their compact size, durability, low power consumption, and wide frequency range. These qualities make them an ideal choice for applications where space is limited, reliability is crucial, and a loud, clear sound is required.</p>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Team</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>In a collaborative group, these three individuals took on distinct responsibilities to ensure efficient progress and achieve the shared objective of creating a functioning child tracker using UWB Technology. The project manager Bidzina provided organizational oversight, delegated tasks, and facilitated communication. All together, they gathered comprehensive and relevant information to support the project's objective, while the Electrical Engineer transformed these complex concepts into a working physical condition. Together, their collective efforts showcased effective teamwork and the utilization of diverse skills for a successful outcome. While there are other responsibilities that each team member did, like who did the website and whatnot, they aren't significant enough to warrant a feature on this website.
+    </p>
+    <p><b>Here are the team members</b>:</p>
+  </div>
+
+  <!-- The Team Pictures-->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\Bidzina.jpg" alt="Bidzina" style="width:100%">
+        <div class="w3-container">
+          <h3>Bidzina Okromchedlishvili</h3>
+          <p class="w3-opacity">Computer Engineer</p>
+          <p>Bidzina was the Computer Engineer responsible for programming the Anchor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\Mindia.jpg" alt="Mindia" style="width:100%">
+        <div class="w3-container">
+          <h3>Mindia Gegeliia</h3>
+          <p class="w3-opacity">Computer Engineer</p>
+          <p>Mindia was the Computer Engineer responsible for programming the Tag.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\mindi\Desktop\Capstone Project\Website\Images\Beqa.jpg" alt="Beqa" style="width:100%">
+        <div class="w3-container">
+          <h3>Beqa Abulashvili</h3>
+          <p class="w3-opacity">Electrical Engineer</p>
+          <p>Beqa was the Electrical Engineer responsible for assembling the Project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thank You Note -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Goodbye</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Thank you for visiting our Website</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
