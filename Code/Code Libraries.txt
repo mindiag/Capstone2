@@ -1,0 +1,1 @@
+The code uses some libraries which need to be included if it is to be tested, we used Arduino ide instead of VS code, unlike other teams. For some reason, I forgot to upload the code itself to Github, so I am uploading now 6 months later. 
